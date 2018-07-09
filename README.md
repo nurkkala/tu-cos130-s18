@@ -41,3 +41,58 @@ You can use Homebrew to install other software. All Homebrew commands start with
    brew install gcc
    ```
    This will generate quite a lot of output and may take a while depending on the speed of your Internet connection, etc. Homebrew is installing a bunch of tools and programs that will allow you to compile and execute C programs.
+
+### Install Other Utilities
+
+Use Homebrew to install the following additional programs.
+
+1. Install the Make program
+   ```
+   brew install make
+   ```
+2. Install the Git program
+   ```
+   brew install git
+   ```
+
+## Clone this Repository
+
+You will need a working copy of this repository on your local machine. The Git program that you just installed is how you will get a copy of it.
+
+1. Decide where you would like to store your working files on your Mac. You might already have a folder tree for your course work, which would work fine. The easiest place to do this is within the Finder.
+1. Let's assume that you have created a folder called `Courses` in your `Documents` folder. We want to navigate to that folder _inside the Terminal command prompt_. Use the built-in **cd** command for this:
+   ```
+   cd ~/Documents/Courses
+   ```
+   where the tilde (`~`) is intepreted as your home directory.
+1. Now clone this repository using Git:
+   ```
+   git clone https://github.com/nurkkala/tu-cos130-s18.git
+   ```
+1. You should find a new directory (folder) called `tu-cos130-s18` in your `Documents/Courses` directory. Change to that directory in your Terminal window:
+   ```
+   cd tu-cos130-s18
+   ```
+
+## Compile the Sample Program
+
+Within the `tu-cos130-s18` folder that you cloned, you should see a file called `main.c`, which contains a trivial "hello, world" program. Let's compile and run that program.
+
+1. From the Teminal command prompt type
+   ```
+   make
+   ```
+   This should run the Gnu C compiler, converting the `main.c` source file into an executable program called `main`.
+   You should be able to see that file in the same directory (folder).
+1. Run the `main` program from the Terminal shell prompt:
+   ```
+   main
+   ```
+   The program should output a simple message: `hello, world`
+   If the shell can't find your `main` program, try executing it this way instead:
+   ```
+   ./main
+   ```
+   The leading `./` tells the shell to "look right in this directory" for the program.
+
+
