@@ -37,7 +37,7 @@ Homebrew is a package manager for the Mac that makes it easy to install a huge v
 You can use Homebrew to install other software. All Homebrew commands start with the word `brew`.
 
 1. In the Terminal window (you can use the same one that you used to install Homebrew), enter this command to install the Gnu C Compiler:
-
-    `brew install gcc`
-
+   ```
+   brew install gcc
+   ```
    This will generate quite a lot of output and may take a while depending on the speed of your Internet connection, etc. Homebrew is installing a bunch of tools and programs that will allow you to compile and execute C programs.
